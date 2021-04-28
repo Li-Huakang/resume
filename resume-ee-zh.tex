@@ -1,0 +1,172 @@
+%%
+%% Copyright (c) 2018-2019 Weitian LI <wt@liwt.net>
+%% CC BY 4.0 License
+%%
+%% Created: 2018-04-11
+%%
+
+% Chinese version
+\documentclass[zh]{resume}
+
+% Adjust icon size (default: same size as the text)
+\iconsize{\Large}
+
+% File information shown at the footer of the last page
+\fileinfo{%
+  % \faCopyright{} 2018--2020, Weitian LI \hspace{0.5em}
+  % \creativecommons{by}{4.0} \hspace{0.5em}
+  % \githublink{liweitianux}{resume} \hspace{0.5em}
+  % \faEdit{} \today
+}
+
+\name{华康}{李}
+
+% \keywords{BSD, Linux, Programming, Python, C, Shell, DevOps, SysAdmin}
+
+% \tagline{\icon{\faBinoculars}} <position-to-look-for>}
+% \tagline{<current-position>}
+
+% \photo{<height>}{<filename>}
+
+\profile{
+  \mobile{155-2717-8316}
+  \email{lihk@whu.edu.cn}
+  \github{li-huakang} \\
+  \university{中国科学院大学}
+  \degree{电力电子 \textbullet 硕士}
+  \birthday{1997-11-01}
+  % \address{北京}
+  % Custom information:
+  % \icontext{<icon>}{<text>}
+  % \iconlink{<icon>}{<link>}{<text>}
+}
+
+\begin{document}
+\makeheader
+
+%======================================================================
+% Summary & Objectives
+%======================================================================
+{\onehalfspacing\hspace{2em}%
+武汉大学电气专业本科，保研至中国科学院电工研究所攻读电力电子专业硕士。
+有扎实的电气和电力电子专业知识基础，
+擅长分析物理模型并有较好的数学应用能力。
+硕士课题研究方向为功率半导体器件与模块，
+理解半导体物理学，熟悉器件模型，专攻结温在线监测，
+目前正研究将卡尔曼滤波器应用于结温信息估测以及水冷循环系统的热模型建立。
+熟悉计算机科学，有一定的嵌入式开发经验。
+热衷于学习新知识（跨学科、交叉学科），并有良好的学习吸收能力。
+\par}
+
+%======================================================================
+\sectionTitle{教育背景}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {2019.09}%
+    % [2013.06]%
+    {中国科学院大学}%
+    {中科院电工所}%
+    {电力电子}%
+    {工学硕士}
+    
+
+  \separator{0.5ex}
+  \education%
+    {2015.09}%
+    [2019.06]%
+    {武汉大学}%
+    {电气与自动化学院}%
+    {电气工程及其自动化}%
+    {工学学士}
+\end{educations}
+
+%======================================================================
+\sectionTitle{知识体系与技能}{\faWrench}
+%======================================================================
+\begin{competences}
+  \comptence{专业知识}{%
+    掌握电气工程基础、电力电子技术、电磁兼容（EMC）基础、功率半导体器件建模与应用；
+  }
+  \comptence{}{%
+    熟悉半导体器件物理、传热学相关知识。
+  }
+  \comptence{专业技能}{
+    软件: Matlab, Simulink, Ansys HFSS, Ansys Icepak, COMSOL, LTspice, Kicad, Altium Designer, SOLIDWORKS等; 
+  }
+  \comptence{}{
+    实验: 功率模块双脉冲测试，模块大功率实验。
+  }
+  \comptence{计算机相关}{%
+    Python, Java, C编程；SSH, Git, Vim, Shell工具; Linux操作系统；LaTex, Matplotlib。
+  }
+  \comptence{\icon{\faLanguage} 语言}{
+    \textbf{英语} --- 读写（优良），听说（日常交流）
+  }
+  \comptence{}{
+    \textbf{日语} --- N3通过，简单阅读
+  }
+\end{competences}
+
+%======================================================================
+\sectionTitle{个人项目}{\faCode}
+%======================================================================
+\begin{itemize}
+  \item 技术文档和学习笔记：\link{https://github.com/Li-Huakang/SVPWM}{\texttt{SVPWM}}、
+  \link{https://github.com/Li-Huakang/SCDP-Notes}{\texttt{半导体器件物理笔记}}、
+  \link{https://github.com/Li-Huakang/DSApy}{\texttt{数据结构与算法}}
+  \item 电机动态数学模型仿真、SVPWM仿真等。
+  \item 基于ESP32的无线双脉冲驱动器：嵌入式、硬件设计、驱动。
+  \item 利用Python、Shell等帮助管理系统、执行办公任务等。
+\end{itemize}
+
+%======================================================================
+\sectionTitle{科研项目}{\faAtom}
+%======================================================================
+\begin{itemize}
+  \item TSEPs方法功率半导体在线结温监测：半导体物理、双脉冲实验。
+  \item 基于信息融合的功率半导体结温估计：半导体、传热、数据融合、卡尔曼滤波。
+  \item 调研电动汽车电驱动器先兆健康管理（PHM）：失效物理、先兆参数提取、人工智能。
+  \item 基于有限差分法的IGBT热电耦合模型：半导体物理、电路、有限差分。
+  \item 本科毕业设计论文《逆变器电磁干扰抑制研究》：无源滤波器、随机PWM。
+  \item 发表 3 篇论文，其中SCI论文 1 篇，第一作者 1 篇。
+\end{itemize}
+
+%======================================================================
+\sectionTitle{获奖}{\faAward}
+%======================================================================
+\begin{itemize}
+  \item 全国大学生数学竞赛二等奖
+  \item 武汉大学三好学生
+  \item 武汉大学曾宪梓奖学金
+  \item 武汉大学暑期社会实践一等奖
+\end{itemize}
+
+%======================================================================
+% \sectionTitle{实习经历}{\faBriefcase}
+% %======================================================================
+% \begin{experiences}
+%   \experience%
+%     [2018.04]%
+%     {2018.08}%
+%     {数据工程师 @ 上海领脉网络科技（初创公司）}%
+%     [\begin{itemize}
+%       \item 从 Amazon 网页搜索并挖取商品与广告信息
+%         （Python, Requests, BeautifulSoup）
+%       \item 配置 Airflow 服务器和数据库等基础设施，
+%         定期从 Amazon 获取产品销售与广告投放等数据
+%       \item 开发网站（Flask, jQuery），帮助客户优化 Amazon 广告投放
+%     \end{itemize}]
+
+%   \separator{0.5ex}
+%   \experience%
+%     [2013.07]%
+%     {2013.09}%
+%     {网站开发 @ 97 随访（初创公司）}%
+%     [\begin{itemize}
+%       \item 后端开发（Django），完成用户注册、数据存储和搜索等功能
+%       \item 前端开发（jQuery, AJAX），对患者各项指标随时间的变化进行可视化
+%     \end{itemize}]
+% \end{experiences}
+
+\end{document}
