@@ -30,7 +30,6 @@
 \RequirePackage[%
   a4paper,%
   margin=1.5cm,%
-  includefoot,
 ]{geometry}
 \RequirePackage{xparse}
 \RequirePackage{etoolbox}
@@ -394,7 +393,7 @@
 %%
 
 \NewDocumentEnvironment{educations}{}{%
-  \begin{tabular}{R{\leftcolwidth} | L{\rightcolwidth}}
+  \begin{tabular}{L{9em} | L{25em} | R{14em}}
 }{%
   \end{tabular}
 }
@@ -403,13 +402,13 @@
 %   {<start-date>}  % #1
 %   [<end-date>]    % #2
 %   {<school>}      % #3
-%   {<department>}  % #4
-%   {<major>}       % #5
-%   {<degree>}      % #6
+%   {<major>}       % #4
+%   {<degree>}      % #5
+%   {<grades>}      % #6
 \NewDocumentCommand{\education}{m o m m m m}{
   \ifdef{\@zh}{%
-    \IfValueTF{#2}{#2}{现在} & \textbf{#3} \textbullet #4 \\*
-    #1 & #5 \textbullet #6 \\
+  #1-\IfValueTF{#2}{#2}{现在} & \textbf{#3} \textbullet  #4 \textbullet #5 & #6\\*
+    % #1 & #5 \textbullet #6 \\ 
   }{%
     \IfValueTF{#2}{#2}{present} & #4, \textbf{#3} \\*
     #1 & #6 in #5 \\

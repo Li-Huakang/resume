@@ -14,3 +14,6 @@ dist/
 # resume-en.pdf
 # resume-zh.pdf
 *.DS_Store
+*.doc
+*.docx
+*电器.pdf
