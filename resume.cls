@@ -393,7 +393,7 @@
 %%
 
 \NewDocumentEnvironment{educations}{}{%
-  \begin{tabular}{L{9em} | L{25em} | R{14em}}
+  \begin{tabular}{L{9em} | L{24em} | R{14em}}
 }{%
   \end{tabular}
 }
